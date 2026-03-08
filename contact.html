@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with Ashish kumar Yadav — web developer and student." />
+  <title>Contact | Ashish Kumar Yadav</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HEADER & NAV ===== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Ashish Kumar <span>Yadav</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Get In Touch</h1>
+        <p>Have a question or a project idea? I'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container contact-grid">
+
+        <!-- Contact Info -->
+        <aside class="contact-info">
+          <h2>Let's Connect</h2>
+          <p>Fill out the form and I'll get back to you within 24 hours. Alternatively, reach me through the channels below.</p>
+          <ul class="contact-details">
+            <li>
+              <span class="contact-icon">📧</span>
+              <div>
+                <strong>Email</strong>
+                <span>ay994007@gmail.com</span>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Location</strong>
+                <span>New Delhi, India</span>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon">💼</span>
+              <div>
+                <strong>LinkedIn</strong>
+                <a href="https://www.linkedin.com/in/ashish-kumar-yadav-961465334/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/ashish-kumar-yadav-961465334/</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon">🐙</span>
+              <div>
+                <strong>GitHub</strong>
+                <a href="https://github.com/ashishyadav9696" target="_blank" rel="noopener noreferrer">https://github.com/ashishyadav9696</a>
+              </div>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper">
+          <form id="contactForm" class="contact-form" novalidate>
+            <h2>Send a Message</h2>
+
+            <!-- Name Field -->
+            <div class="form-group">
+              <label for="name">Full Name <span class="required">*</span></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="e.g. Ashish Kumar"
+                autocomplete="name"
+              />
+              <span class="error-msg" id="nameError" role="alert"></span>
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="e.g. ashish@example.com"
+                autocomplete="email"
+              />
+              <span class="error-msg" id="emailError" role="alert"></span>
+            </div>
+
+            <!-- Message Field -->
+            <div class="form-group">
+              <label for="message">Message <span class="required">*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message here..."
+              ></textarea>
+              <span class="error-msg" id="messageError" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              Send Message 🚀
+            </button>
+          </form>
+
+          <!-- Success Message (hidden by default) -->
+          <div class="success-panel" id="successPanel" aria-live="polite" hidden>
+            <div class="success-icon">✅</div>
+            <h3>Message Sent!</h3>
+            <p id="successSummary"></p>
+            <button class="btn btn-outline" id="resetBtn">Send Another Message</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Ashish Kumar Yadav. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
